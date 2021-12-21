@@ -27,8 +27,9 @@
     </li>
 
    </ul>
-
-   <p>{{ post.text }}</p>    
+    <p>
+     {{ post.text }}
+    </p>
 
     {% if post.group_id != NULL %}
 
@@ -38,11 +39,8 @@
 
   {% if not forloop.last %}<hr>{% endif %}
 
-{% endfor %} 
+  {% endfor %} 
 
 {% endblock %}
 
-      {% block text %}
-
-      {% endblock %}
-
+      

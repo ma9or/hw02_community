@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-# Из модуля models импортируем модель Post
+
 from .models import Post, Group
 # При регистрации модели Post источником конфигурации для неё назначаем
 # класс PostAdmin

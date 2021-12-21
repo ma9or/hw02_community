@@ -8,15 +8,10 @@
 
 {% endblock %}
 
-      {% block content %}
+      
+{% block content %}
 
-       {{group}}
-
-      {% endblock %}
-
-{% block text %}
-
-  <p>
+   <p>
 
     {{ group.description }}
 
@@ -40,7 +35,11 @@
 
    </ul>
 
-   <p>{{ post.text }}</p>
+    <p> 
+
+   {{ post.text }}
+
+    </p>
 
     {% if post.group_id != NULL %}
 
@@ -52,7 +51,6 @@
 
   {% endfor %} 
 
-{% endblock %} 
-
+  {% endblock %}
 
 
