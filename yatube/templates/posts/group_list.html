@@ -8,14 +8,16 @@
 
 {% endblock %}
 
-      
 {% block content %}
+
+{{ group}}
 
    <p>
 
     {{ group.description }}
 
   </p>
+  <article>
 
   {% for post in posts %}
 
@@ -50,6 +52,7 @@
   {% if not forloop.last %}<hr>{% endif %}
 
   {% endfor %} 
+  </article>
 
   {% endblock %}
 
