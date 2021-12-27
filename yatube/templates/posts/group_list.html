@@ -46,13 +46,7 @@
 
   </article>
     
-  {% if not forloop.last %}
-  
-  <article>_</article> 
-  <hr>
-  <article>_</article>  
-  
-  {% endif %}
+  {% if not forloop.last %}<hr>{% endif %}
 
   {% endfor %} 
   
